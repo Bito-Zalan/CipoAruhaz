@@ -1,0 +1,166 @@
+main {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'article article article article aside aside'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+}
+
+header{
+    grid-area: header;
+}
+
+article{
+    grid-area: article;
+   /*  background-color: black; */
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+  /*fejléc elemek------------------------------------------*/
+  .cim{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    /* text-decoration: underline;
+    text-decoration-color: rgb(202, 202, 202); */
+  }
+
+  .lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+  }
+
+  .fejlecgombok{
+    /* position: fixed; */
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    
+  }
+
+  .fejlecgombok:hover{
+    background-color: white;
+    color: black;
+  }
+  /*-------------------------------------------------------*/
+
+
+  /*rendező elemek-----------------------------------------*/
+  .extrak {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  /*-------------------------------------------------------*/
+
+
+  /*kártya elemek -----------------------------------------*/
+  .card-text {
+    font-size: 12px;
+  }
+  
+  .card-body{
+    background-color: white;
+  }
+
+  .ciponev {
+    text-decoration: underline;
+    text-decoration-color: rgba(134, 134, 134, 0.61);
+  }
+
+  .termekek {
+    display: grid;
+    grid-template-columns: repeat(3, 12rem);
+  }
+
+  /*-------------------------------------------------------*/
+  
+  
+  
+  /*kosár elemek ------------------------------------------*/
+  .kosargomb{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    background-color:black;
+    padding: 7px;
+  }
+
+  .kosargomb:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+
+  /*-------------------------------------------------------*/
+  
+  h3{
+    color: black;
+  }
+
+  h4{
+    font-size: 12px;
+  }
+  
+ 
+  
+
+  /*Reszponzivitás----------------------------------------------------------------------------------------*/
+  @media (max-width: 576px) {
+    main {
+      width: 100%;
+      margin: auto;
+    }
+  }
+  @media (max-width: 775px) {
+    /* .termekek {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      width: 100%;
+      margin: auto;
+      margin-top: 90px;
+    } */
+  }
+  
+  @media (max-width: 1130px) {
+    .termekek {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      margin-top: 90px;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .termekek {
+      gap: 20px;
+      width: 100%;
+      margin: auto;
+      margin-top: 90px;
+    }
+
+  }
+  
