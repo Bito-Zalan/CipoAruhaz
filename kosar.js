@@ -3,27 +3,36 @@ import { kosarLISTA } from "./kosarlista.js";
 
 
 export function kosarTartalomOsszeallit(lista){
-    let txt = "";
+    let kosarelemek = "";
     lista.forEach(element => {
-        txt += `<div>`;
-        txt += `<p>${element.nev}</p>`;
-        txt += `<p>${element.ar}Ft</p>`;
-        txt += `</div>`;
+        kosarelemek += `<div>
+        <img class="kosarkep" src="${element.kép}" alt="kep">
+        <p>${element.név}<br>
+        Ár: ${element.ár}Ft</p>
+        <p>------------------------------</p>
+        </div>`;
     });
-    return txt;
+    return kosarelemek;
 }
 
 export function kosarGomb(){
-    const kosarELEM = $(".kosar");
+    const kosarELEM = $(".kosargomb");
     kosarELEM.on("click", function(event){
         const termekIndex = event.target.id;
         kosarLISTA.push(CIPOK[termekIndex]);
-        kosarInit(kosarLISTA);
+        kosarMegjelenit(kosarLISTA);
     });
 }
 
-export function kosarInit(lista){
+export function kosarMegjelenit(lista){
     const tartalom = kosarTartalomOsszeallit(lista);
-    const tartalomELEM = $(".kosarTartalom");
+    const tartalomELEM = $(".kosartartalom");
     tartalomELEM.html(tartalom);
 }
+
+/* export function rendelesGomb(){
+    const rendelesELEM = $(".rendelesgomb");
+    rendelesELEM.on("click", function (event) {
+        alert
+    })
+} */

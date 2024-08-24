@@ -3,7 +3,7 @@ main {
     display: grid;
     grid-template-areas: 
         'header header header header header header'
-        'article article article article aside aside'
+        'article article article aside aside aside'
         'footer footer footer footer footer footer';
     gap: 10px;
 }
@@ -14,7 +14,7 @@ header{
 
 article{
     grid-area: article;
-   /*  background-color: black; */
+   border-right: 3px solid black;
 }
 
 aside{
@@ -34,8 +34,7 @@ footer {
     color: white;
     background-color: black;
     padding: 10px;
-    /* text-decoration: underline;
-    text-decoration-color: rgb(202, 202, 202); */
+    
   }
 
   .lista{
@@ -58,6 +57,7 @@ footer {
   .fejlecgombok:hover{
     background-color: white;
     color: black;
+    padding: 12px;
   }
   /*-------------------------------------------------------*/
 
@@ -77,21 +77,24 @@ footer {
   /*kártya elemek -----------------------------------------*/
   .card-text {
     font-size: 12px;
+    color: white;
   }
   
   .card-body{
-    background-color: white;
+    /* background-color: white; */
   }
 
   .ciponev {
+    color: white;
     text-decoration: underline;
     text-decoration-color: rgba(134, 134, 134, 0.61);
   }
 
   .termekek {
     display: grid;
-    grid-template-columns: repeat(3, 12rem);
+    grid-template-columns: repeat(4, 17rem);
   }
+
 
   /*-------------------------------------------------------*/
   
@@ -112,9 +115,16 @@ footer {
     border: 1px solid black;
   }
 
+  .kosarkep{
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid black;
+  }
+
 
   /*-------------------------------------------------------*/
   
+
   h3{
     color: black;
   }
@@ -122,7 +132,51 @@ footer {
   h4{
     font-size: 12px;
   }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
   
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .adminkep{
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid black;
+  }
+
+  
+
+  .mentesgomb{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 120px;
+    margin-top: 10px;
+  }
+  .mentesgomb:hover{
+    background-color: white;
+    color: black;
+    padding: 18px;
+    width: 120px;
+    margin-top: 10px;
+  }
+
  
   
 
