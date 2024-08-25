@@ -2,7 +2,7 @@ import { CIPOK } from "./adatok.js";
 import { kosarLISTA } from "./kosarlista.js";
 
 
-export function kosarTartalomOsszeallit(lista){
+export function kosarLetrehoz(lista){
     let kosarelemek = "";
     lista.forEach(element => {
         kosarelemek += `<div>
@@ -16,7 +16,7 @@ export function kosarTartalomOsszeallit(lista){
 }
 
 export function kosarMegjelenit(lista){
-    const tartalom = kosarTartalomOsszeallit(lista);
+    const tartalom = kosarLetrehoz(lista);
     const tartalomELEM = $(".kosartartalom");
     tartalomELEM.html(tartalom);
 }
@@ -30,3 +30,13 @@ export function kosarGomb(){
     });
 }
 
+export function rendelesGomb(){
+    const rendelesELEM = $(".rendelesgomb");
+    rendelesELEM.on("click", function () {
+      if (kosarLISTA.length === 0) {
+        alert("A kosarad üres!")
+      } else{
+        alert("Köszönhük a rendelést!");
+      }
+    })
+  }

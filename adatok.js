@@ -8,7 +8,6 @@ export const CIPOK = [
         méret: [38,40,42],
         kép: "kepek/magasszaru1.png",
         szin: "Kék"
-        /* id: 1 */
     },
     {
         név : "Air Jordan 1 Retro High OG",
@@ -18,7 +17,6 @@ export const CIPOK = [
         méret: [40,41],
         kép: "kepek/magasszaru2.webp",
         szin: "Barna"
-        /* id: 2 */
     },
     {
         név : "Air Jordan 1 Low NEW",
@@ -28,7 +26,6 @@ export const CIPOK = [
         méret: [42,43,44,45],
         kép: "kepek/alacsonyszaru3.webp",
         szin: "Fekete"
-        /* id: 3 */
     },
     {
         név : "Air Jordan 1 Retro High OG",
@@ -39,7 +36,6 @@ export const CIPOK = [
         méret: [38,40,42],
         kép: "kepek/magasszaru1.png",
         szin: "Kék"
-       /*  id: 4 */
     },
     {
         név : "Air Jordan 1 Retro High OG",
@@ -49,7 +45,6 @@ export const CIPOK = [
         méret: [40,41],
         kép: "kepek/magasszaru2.webp",
         szin: "Barna"
-        /* id: 5 */
     },
     {
         név : "Air Jordan 1 Low NEW",
@@ -57,9 +52,8 @@ export const CIPOK = [
         ár: "33.990",
         db: 8,
         méret: [42,43,44,45],
-        kép: "kepek/alacsonyszaru3.webp",
+        kép: "kepek/alacsonyszaru1.png",
         szin: "Fekete"
-        /* id: 6 */
     },
     {
         név : "Air Jordan 1 Retro High OG",
@@ -67,9 +61,8 @@ export const CIPOK = [
         ár: "411.990",
         db: 33,
         méret: [40,41],
-        kép: "kepek/magasszaru2.webp",
-        szin: "Barna"
-        /* id: 5 */
+        kép: "kepek/magasszaru3.webp",
+        szin: "Sárga"
     },
     {
         név : "Air Jordan 1 Low NEW",
@@ -77,8 +70,7 @@ export const CIPOK = [
         ár: "33.990",
         db: 11,
         méret: [42,43,44,45],
-        kép: "kepek/alacsonyszaru3.webp",
+        kép: "kepek/alacsonyszaru2.webp",
         szin: "Fekete"
-        /* id: 6 */
     },
 ]
