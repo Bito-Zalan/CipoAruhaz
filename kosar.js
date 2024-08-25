@@ -26,7 +26,7 @@ export function kosarGomb(){
     KOSAR_ELEM.on("click", function(event){
         const TERMEK_INDEX = event.target.id;
         KOSARLISTA.push(CIPOK[TERMEK_INDEX]);
-        kosarMegjelenit(kosarLISTA);
+        kosarMegjelenit(KOSARLISTA);
     });
 }
 
