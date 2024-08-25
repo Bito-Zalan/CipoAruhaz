@@ -15,6 +15,12 @@ export function kosarTartalomOsszeallit(lista){
     return kosarelemek;
 }
 
+export function kosarMegjelenit(lista){
+    const tartalom = kosarTartalomOsszeallit(lista);
+    const tartalomELEM = $(".kosartartalom");
+    tartalomELEM.html(tartalom);
+}
+
 export function kosarGomb(){
     const kosarELEM = $(".kosargomb");
     kosarELEM.on("click", function(event){
@@ -24,15 +30,3 @@ export function kosarGomb(){
     });
 }
 
-export function kosarMegjelenit(lista){
-    const tartalom = kosarTartalomOsszeallit(lista);
-    const tartalomELEM = $(".kosartartalom");
-    tartalomELEM.html(tartalom);
-}
-
-/* export function rendelesGomb(){
-    const rendelesELEM = $(".rendelesgomb");
-    rendelesELEM.on("click", function (event) {
-        alert
-    })
-} */

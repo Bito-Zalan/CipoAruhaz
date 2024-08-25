@@ -15,6 +15,7 @@ header{
 article{
     grid-area: article;
    border-right: 3px solid black;
+   margin-left: 20px;
 }
 
 aside{
@@ -80,10 +81,6 @@ footer {
     color: white;
   }
   
-  .card-body{
-    /* background-color: white; */
-  }
-
   .ciponev {
     color: white;
     text-decoration: underline;
@@ -155,8 +152,7 @@ footer {
   }
 
   .adminkep{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 50px;
     border: 1px solid black;
   }
 
@@ -181,40 +177,119 @@ footer {
   
 
   /*Reszponzivitás----------------------------------------------------------------------------------------*/
-  @media (max-width: 576px) {
-    main {
-      width: 100%;
-      margin: auto;
-    }
-  }
-  @media (max-width: 775px) {
-    /* .termekek {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      width: 100%;
-      margin: auto;
-      margin-top: 90px;
-    } */
-  }
-  
-  @media (max-width: 1130px) {
-    .termekek {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      margin: auto;
-      margin-top: 90px;
-    }
-  }
   
   @media (max-width: 1400px) {
-    .termekek {
-      gap: 20px;
-      width: 100%;
-      margin: auto;
-      margin-top: 90px;
+    .card-text {
+      font-size: 10px;
+      color: white;
     }
-
+    
+    .ciponev {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: rgba(134, 134, 134, 0.61);
+    }
+  
+    .termekek {
+      display: grid;
+      grid-template-columns: repeat(4, 12rem);
+      gap: 10px;
+    }
   }
+
+  @media (max-width: 1130px) {
+    .card-text {
+      font-size: 8px;
+      color: white;
+    }
+    
+    .ciponev {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: rgba(134, 134, 134, 0.61);
+    }
+  
+    .termekek {
+      display: grid;
+      grid-template-columns: repeat(4, 9rem);
+      gap: 10px;
+    }
+    
+  }
+  
+  @media (max-width: 850px) {
+    .card-text {
+      font-size: 7px;
+      color: white;
+    }
+    
+    .ciponev {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: rgba(134, 134, 134, 0.61);
+    }
+  
+    .termekek {
+      display: grid;
+      grid-template-columns: repeat(3, 9rem);
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 690px) {
+    .card-text {
+      font-size: 6px;
+      color: white;
+    }
+    
+    .ciponev {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: rgba(134, 134, 134, 0.61);
+    }
+  
+    .termekek {
+      display: grid;
+      grid-template-columns: repeat(2, 9rem);
+      gap: 10px;
+    }
+  }
+
+  
+  @media (max-width: 540px) {
+    main {
+      width: 100%;
+      display: grid;
+      grid-template-areas: 
+          'header header header header header header'
+          'article article article article article aside'
+          'footer footer footer footer footer footer';
+      gap: 10px;
+  }
+
+    .card-text {
+      font-size: 8px;
+      color: white;
+    }
+    
+    .card{
+      margin-left: 5px;
+    }
+    
+    .ciponev {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: rgba(134, 134, 134, 0.61);
+    }
+  
+    .termekek {
+      display: grid;
+      grid-template-columns: repeat(1, 8rem);
+      gap: 10px;
+    }
+  }
+  
+ 
+  
+  
   

@@ -1,5 +1,6 @@
-import { abcRendez, arCsokkenoRendez, arNovekvoRendez, szuresLista } from "./fuggvenyek.js";
+import { abcRendez, arCsokkenoRendez, arNovekvoRendez, szuresLista, torol} from "./fuggvenyek.js";
 import { init } from "./main.js";
+import { CIPOK } from "./adatok.js";
 
 
 export function szures(){
@@ -29,3 +30,22 @@ export function rendez(lista){
        }
     });
 }
+
+export function torolEsemeny(){
+    const torolELEM = $(".torol");
+    torolELEM.on("click", function(event){
+        let index = event.target.id;
+        const LISTA = torol(CIPOK, index);
+        init(LISTA);
+    });
+  }
+  
+ /*  export function kosarTorolEsemeny(){
+    const KOSARTOROLELEM = $(".kosargomb");
+    KOSARTOROLELEM.on("click", function(event){
+        let index = event.target.id;
+        const LISTA = kosarTorolGomb(CIPOK, index);
+        init(LISTA);
+    });
+  }
+ */

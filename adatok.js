@@ -21,7 +21,7 @@ export const CIPOK = [
         /* id: 2 */
     },
     {
-        név : "Air Jordan 1 Low",
+        név : "Air Jordan 1 Low NEW",
         tipus: "Alacsonyszárú",
         ár: "53.990",
         db: 44,
@@ -52,7 +52,7 @@ export const CIPOK = [
         /* id: 5 */
     },
     {
-        név : "Air Jordan 1 Low",
+        név : "Air Jordan 1 Low NEW",
         tipus: "Alacsonyszárú",
         ár: "33.990",
         db: 8,
@@ -72,7 +72,7 @@ export const CIPOK = [
         /* id: 5 */
     },
     {
-        név : "Air Jordan 1 Low",
+        név : "Air Jordan 1 Low NEW",
         tipus: "Alacsonyszárú",
         ár: "33.990",
         db: 11,
