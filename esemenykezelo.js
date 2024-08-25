@@ -37,8 +37,8 @@ export function rendez(lista) {
 }
 
 export function torolEsemeny() {
-  const torolELEM = $(".torol");
-  torolELEM.on("click", function (event) {
+  const TOROL_ELEM = $(".torol");
+  TOROL_ELEM.on("click", function (event) {
     let index = event.target.id;
     const LISTA = torol(CIPOK, index);
     init(LISTA);
@@ -46,8 +46,8 @@ export function torolEsemeny() {
 }
 
 export function mentesGombAtvaltoztat() {
-  const mentELEM = $(".mentesgomb");
-  mentELEM.on("click", (event) => {
+  const MENT_ELEM = $(".mentesgomb");
+  MENT_ELEM.on("click", (event) => {
     event.target.textContent = "Mentve!";
   });
 }

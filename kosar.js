@@ -1,5 +1,5 @@
 import { CIPOK } from "./adatok.js";
-import { kosarLISTA } from "./kosarlista.js";
+import { KOSARLISTA } from "./kosarlista.js";
 
 
 export function kosarLetrehoz(lista){
@@ -16,24 +16,24 @@ export function kosarLetrehoz(lista){
 }
 
 export function kosarMegjelenit(lista){
-    const tartalom = kosarLetrehoz(lista);
-    const tartalomELEM = $(".kosartartalom");
-    tartalomELEM.html(tartalom);
+    const TARTALOM = kosarLetrehoz(lista);
+    const TARTALOM_ELEM = $(".kosartartalom");
+    TARTALOM_ELEM.html(TARTALOM);
 }
 
 export function kosarGomb(){
-    const kosarELEM = $(".kosargomb");
-    kosarELEM.on("click", function(event){
-        const termekIndex = event.target.id;
-        kosarLISTA.push(CIPOK[termekIndex]);
+    const KOSAR_ELEM = $(".kosargomb");
+    KOSAR_ELEM.on("click", function(event){
+        const TERMEK_INDEX = event.target.id;
+        KOSARLISTA.push(CIPOK[TERMEK_INDEX]);
         kosarMegjelenit(kosarLISTA);
     });
 }
 
 export function rendelesGomb(){
-    const rendelesELEM = $(".rendelesgomb");
-    rendelesELEM.on("click", function () {
-      if (kosarLISTA.length === 0) {
+    const RENDELES_ELEM = $(".rendelesgomb");
+    RENDELES_ELEM.on("click", function () {
+      if (KOSARLISTA.length === 0) {
         alert("A kosarad üres!")
       } else{
         alert("Köszönhük a rendelést!");
